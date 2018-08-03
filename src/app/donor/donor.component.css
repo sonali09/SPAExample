@@ -1,0 +1,10 @@
+ul>li{
+    display: inline;
+}
+li{
+    margin: 20px;
+}
+a{
+    margin: 20px;
+    font-size: 1.5em;
+}

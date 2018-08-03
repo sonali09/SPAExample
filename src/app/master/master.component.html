@@ -1,0 +1,21 @@
+<p>
+  master works!
+</p>
+<div *ngIf='show'>
+<app-dobby [name]="'Dobs'">
+  <h1>I am your master dobby</h1>
+  <table>
+    <tr>
+      <td>
+        Master
+      </td>
+      <td>
+        Dobby
+      </td>
+    </tr>
+  </table>
+</app-dobby>
+</div>
+<label>Give Dobby a name:</label>
+<input type="text" [(ngModel)]='name'>
+<button (click)="changeShow()">Destroy Dobby</button>

@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Welcome to spa!</h1>
+<ul>
+  <li>
+    <a [routerLink]="['/login']">Login</a>
+    <a [routerLink]="['/donor']">Donor</a>
+    <a [routerLink]="['/reqBlood']">Request Blood</a>
+    <a [routerLink]="['/contact']">Contacts</a>
+  </li>
+</ul>
+<button (click)="logout()">Logout</button>
+<router-outlet></router-outlet>

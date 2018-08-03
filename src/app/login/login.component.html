@@ -1,0 +1,12 @@
+<p>{{message}}</p>
+<form [formGroup]='loginForm' (ngSubmit)='submit()'>
+  <div class="container">
+  <ng-container *ngFor='let each of frmConfig'>
+    <div>
+    <label>{{each.label}}</label>
+    <input type={{each.type}} name={{each.name}} formControlName={{each.name}}>
+  </div>
+  </ng-container>
+</div>
+  <input type="submit" value='login'>
+</form>
